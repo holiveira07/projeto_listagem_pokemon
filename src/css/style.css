@@ -1,0 +1,152 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bab;
+    color: #333333;
+}
+
+
+body.modo-escuro{
+    background-color: #212121;
+    color: #f5f5f5;
+     
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    margin:px;
+    padding: 25px;
+    
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover
+{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 40px;
+}
+
+header #Botao-alterar-tema{
+    background: none;
+    border: none;  
+}
+main{
+    padding: 25px;
+ 
+}
+
+main .listagem-pokemon{
+    display:flex;  
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main .cartao-pokemon{
+    
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+    
+    
+}
+
+main .cartao-pokemon:hover{
+    background-color: rgba(107, 173, 190, 0.541);
+}
+
+.modo-escuro .cartao-pokemon{
+    background: #a8a8a8;
+}
+
+
+
+ main .cartao-pokemon .informacoes{
+   display: flex;
+   justify-content: space-between;
+   background-color: rgba(202, 5, 5, 0.671);
+   padding: 4px;
+   border: 1px solid #333333;
+   border-radius: 15px;
+
+   
+}
+
+main .cartao-pokemon .informacoes span{
+   padding: 5px;
+   text-transform: uppercase;
+}
+
+main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;
+}
+    
+
+main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+.tipo-grama{
+    background-color: rgba(4, 223, 4, 0.651);
+    gap: 12px;
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+
+.tipo-veneno{
+    background-color: rgba(217, 98, 233, 0.801);
+    gap: 12px;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+
+.tipo-fogo{
+    background-color: rgba(255, 123, 0, 0.959);
+    gap: 12px;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+
+.tipo-agua{
+    background-color: rgba(5, 216, 253, 0.801);
+    gap: 12px;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+
+.tipo-inseto{
+    background-color: rgba(77, 156, 3, 0.842);
+    gap: 12px;
+    padding: 8px;
+    border-radius: 10px;
+}
+main .descricao{
+    max-height: 80px;
+    overflow-y:scroll;
+    text-align:center;
+
+}
+
